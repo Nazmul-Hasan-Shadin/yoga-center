@@ -1,5 +1,6 @@
 [
   {
+     "id":1,
     "name": "Yoga Mastery Program",
     "image": "https://i.ibb.co/f0zjHpb/workshop1.webp",
     "price": "$79",
@@ -10,6 +11,7 @@
     }
   },
   {
+    "id":2,
     "name": "Holistic Nutrition Workshop",
     "image": "https://i.ibb.co/tqxPsKz/vanila.jpg",
     "price": "$29 per class",
@@ -20,6 +22,7 @@
     }
   },
   {
+    "id":3,
     "name": "Zen Spa Retreat",
     "image": "https://i.ibb.co/kcvTz4Z/retreat.webp",
     "price": "$399 for 4 days",
@@ -30,6 +33,7 @@
     }
   },
   {
+    "id":4,
     "name": "Mindful Power Yoga",
     "image": "https://i.ibb.co/x5LLQ90/powe-yoga.png",
     "price": "$69 for 5 sessions",
@@ -40,6 +44,7 @@
     }
   },
   {
+    "id":5,
     "name": "Stress-Free Yoga Therapy",
     "image": "https://i.ibb.co/8djWGD2/therapy.jpg",
     "price": "$25 per session",
@@ -50,6 +55,7 @@
     }
   },
   {
+    "id":6,
     "name": "Empowering Prenatal Yoga",
     "image": "https://i.ibb.co/9HfJX4H/parental1.png",
     "price": "$69 for 4 classes",
