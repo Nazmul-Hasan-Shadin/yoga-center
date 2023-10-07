@@ -1,68 +1,44 @@
 [
   {
-     "id":1,
-    "name": "Yoga Mastery Program",
-    "image": "https://i.ibb.co/f0zjHpb/workshop1.webp",
-    "price": "$79",
-    "description": "Elevate your yoga practice to new heights with our Yoga Mastery Program. This comprehensive course is designed for both beginners and experienced practitioners, offering a deep dive into advanced yoga techniques and philosophy.",
-    "button": {
-      "text": "Learn More",
-      "link": "https://example.com/yoga-mastery-program"
-    }
+    "id": 1,
+    "name": "Yoga Event Coordination",
+    "description": "We offer comprehensive event coordination services for yoga events, handling venue selection, logistics, scheduling, and vendor coordination. Let us take care of the details, so you can focus on creating a memorable yoga event.",
+    "price": "Custom pricing",
+    "image": "https://i.ibb.co/f0zjHpb/workshop1.webp"
   },
   {
-    "id":2,
-    "name": "Holistic Nutrition Workshop",
-    "image": "https://i.ibb.co/tqxPsKz/vanila.jpg",
-    "price": "$29 per class",
-    "description": "Embark on a journey of holistic well-being with our Holistic Nutrition Workshop. Discover the synergy between mindful eating, yoga, and vibrant health. Enhance your flexibility, strength, and mindfulness.",
-    "button": {
-      "text": "Learn More",
-      "link": "https://example.com/holistic-nutrition-workshop"
-    }
+    "id": 2,
+    "name": "Yoga Retreat Planning",
+    "description": "Embark on a stress-free yoga retreat journey with our planning services. We'll assist you in choosing the perfect location, arranging comfortable accommodations, planning nutritious meals, and curating engaging activities for participants. Your yoga retreat will be an unforgettable experience.",
+    "price": "Custom pricing based on retreat complexity",
+    "image": "https://i.ibb.co/tqxPsKz/vanila.jpg"
   },
   {
-    "id":3,
-    "name": "Zen Spa Retreat",
-    "image": "https://i.ibb.co/kcvTz4Z/retreat.webp",
-    "price": "$399 for 4 days",
-    "description": "Indulge in the ultimate relaxation at our Zen Spa Retreat. Escape to a tranquil paradise and rejuvenate your body and mind with Hatha yoga, meditation, and gourmet organic meals.",
-    "button": {
-      "text": "Learn More",
-      "link": "https://example.com/zen-spa-retreat"
-    }
+    "id": 3,
+    "name": "Yoga Festival Management",
+    "description": "Leave the intricate details of organizing a yoga festival to us. Our expertise includes stage setup, artist coordination, ticketing solutions, and effective marketing strategies. With our support, your yoga festival will run smoothly and attract a delighted audience.",
+    "price": "Custom pricing based on festival size and requirements",
+    "image": "https://i.ibb.co/McVQLxv/festival.jpg"
   },
   {
-    "id":4,
-    "name": "Mindful Power Yoga",
-    "image": "https://i.ibb.co/x5LLQ90/powe-yoga.png",
-    "price": "$69 for 5 sessions",
-    "description": "Experience the transformational power of Mindful Power Yoga. This dynamic class focuses on enhancing strength, balance, and endurance while cultivating mindfulness and self-awareness.",
-    "button": {
-      "text": "Learn More",
-      "link": "https://example.com/mindful-power-yoga"
-    }
+    "id": 4,
+    "name": "Corporate Yoga Wellness Programs",
+    "description": "Invest in the well-being of your employees with our corporate yoga wellness programs. We offer on-site or virtual yoga sessions customized to your company's needs. These programs promote physical and mental health among your team, leading to a more productive and harmonious work environment.",
+    "price": "Tailored packages starting at $500 per session",
+    "image": "https://i.ibb.co/mqsQ8Gk/corporate.png"
   },
   {
-    "id":5,
-    "name": "Stress-Free Yoga Therapy",
-    "image": "https://i.ibb.co/8djWGD2/therapy.jpg",
-    "price": "$25 per session",
-    "description": "Discover the path to stress relief and inner peace through our Stress-Free Yoga Therapy sessions. These specialized yoga classes are expertly crafted to help you manage stress, reduce tension, and find profound relaxation.",
-    "button": {
-      "text": "Learn More",
-      "link": "https://example.com/stress-free-yoga-therapy"
-    }
+    "id": 5,
+    "name": "Yoga Workshop Planning",
+    "description": "Host impactful yoga workshops with ease. Our services encompass venue selection, strategic event marketing, and the provision of high-quality equipment. Participants will leave your workshop with enhanced yoga knowledge and a sense of fulfillment.",
+    "price": "Starting at $750 per workshop",
+    "image": "https://i.ibb.co/4sxVxMp/workshopn1.webp"
   },
   {
-    "id":6,
-    "name": "Empowering Prenatal Yoga",
-    "image": "https://i.ibb.co/9HfJX4H/parental1.png",
-    "price": "$69 for 4 classes",
-    "description": "Experience the journey of motherhood with our Empowering Prenatal Yoga Classes. These gentle and nurturing sessions are designed exclusively for expectant mothers, providing physical strength and emotional connection with your baby.",
-    "button": {
-      "text": "Learn More",
-      "link": "https://example.com/empowering-prenatal-yoga"
-    }
+    "id": 6,
+    "name": "Private Yoga Event Coordination",
+    "description": "Make special occasions memorable with our private yoga event coordination services. Whether it's a birthday party, bridal shower, or any unique event, we'll create a tailored yoga experience, complete with expert instructors and top-notch equipment. Celebrate in style and relaxation.",
+    "price": "Custom pricing based on event size and requirements",
+    "image": "https://i.ibb.co/8djWGD2/therapy.jpg"
   }
 ]
