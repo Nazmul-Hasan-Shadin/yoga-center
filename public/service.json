@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Yoga Mastery Program",
+    "image": "https://i.ibb.co/f0zjHpb/workshop1.webp",
+    "price": "$79",
+    "description": "Elevate your yoga practice to new heights with our Yoga Mastery Program. This comprehensive course is designed for both beginners and experienced practitioners, offering a deep dive into advanced yoga techniques and philosophy.",
+    "button": {
+      "text": "Learn More",
+      "link": "https://example.com/yoga-mastery-program"
+    }
+  },
+  {
+    "name": "Holistic Nutrition Workshop",
+    "image": "https://i.ibb.co/tqxPsKz/vanila.jpg",
+    "price": "$29 per class",
+    "description": "Embark on a journey of holistic well-being with our Holistic Nutrition Workshop. Discover the synergy between mindful eating, yoga, and vibrant health. Enhance your flexibility, strength, and mindfulness.",
+    "button": {
+      "text": "Learn More",
+      "link": "https://example.com/holistic-nutrition-workshop"
+    }
+  },
+  {
+    "name": "Zen Spa Retreat",
+    "image": "https://i.ibb.co/kcvTz4Z/retreat.webp",
+    "price": "$399 for 4 days",
+    "description": "Indulge in the ultimate relaxation at our Zen Spa Retreat. Escape to a tranquil paradise and rejuvenate your body and mind with Hatha yoga, meditation, and gourmet organic meals.",
+    "button": {
+      "text": "Learn More",
+      "link": "https://example.com/zen-spa-retreat"
+    }
+  },
+  {
+    "name": "Mindful Power Yoga",
+    "image": "https://i.ibb.co/x5LLQ90/powe-yoga.png",
+    "price": "$69 for 5 sessions",
+    "description": "Experience the transformational power of Mindful Power Yoga. This dynamic class focuses on enhancing strength, balance, and endurance while cultivating mindfulness and self-awareness.",
+    "button": {
+      "text": "Learn More",
+      "link": "https://example.com/mindful-power-yoga"
+    }
+  },
+  {
+    "name": "Stress-Free Yoga Therapy",
+    "image": "https://i.ibb.co/8djWGD2/therapy.jpg",
+    "price": "$25 per session",
+    "description": "Discover the path to stress relief and inner peace through our Stress-Free Yoga Therapy sessions. These specialized yoga classes are expertly crafted to help you manage stress, reduce tension, and find profound relaxation.",
+    "button": {
+      "text": "Learn More",
+      "link": "https://example.com/stress-free-yoga-therapy"
+    }
+  },
+  {
+    "name": "Empowering Prenatal Yoga",
+    "image": "https://i.ibb.co/9HfJX4H/parental1.png",
+    "price": "$69 for 4 classes",
+    "description": "Experience the journey of motherhood with our Empowering Prenatal Yoga Classes. These gentle and nurturing sessions are designed exclusively for expectant mothers, providing physical strength and emotional connection with your baby.",
+    "button": {
+      "text": "Learn More",
+      "link": "https://example.com/empowering-prenatal-yoga"
+    }
+  }
+]
