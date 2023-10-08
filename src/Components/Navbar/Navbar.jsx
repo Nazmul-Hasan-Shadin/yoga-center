@@ -1,8 +1,12 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useContext } from "react";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import logo from '../../assets/logoo.jpg'
-
+import userPhoto  from '../../assets/user.png'
+import { AuthContext } from "../../ContextProvider/AuthProvider";
 const Navbar = () => {
+ 
+  const {user,handleSignOut}=useContext(AuthContext)
+  const {photoURL,displayName}= user || {} ;
   const links = (
     <>
       <li>
@@ -38,7 +42,7 @@ const Navbar = () => {
       </li>
       <li>
       <NavLink
-  to="/messages"
+  to="/login"
   className={({ isActive, isPending }) =>
     isPending ? "pending" : isActive ? "active" : ""
   }
@@ -49,8 +53,8 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 justify-between md:justify-between">
-      <div className="navbar-start">
+    <div className="navbar bg-base-100 justify-between md:justify-">
+      <div className="navbar-start z-20">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
@@ -77,11 +81,19 @@ const Navbar = () => {
         </div>
         <img className="w-28 h-42" src={logo} alt="" />
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{links}</ul>
+      <div className="navbar-center hidden  lg:flex">
+        <ul className="menu  menu-horizontal px-1">{links}</ul>
       </div>
       <div className="">
-        <a className="btn">Register</a>
+      {
+        user ? <>
+           <span className="pr-3   font-semibold"> {displayName} </span>
+           <button  onClick={()=>handleSignOut()} className="btn-md btn mr-4">Logout</button>
+           <img className="w-16 h-16 rounded-full" src={photoURL} alt="" /> 
+
+        
+        </>:   <img className="w-12 h-12" src={userPhoto} alt="" />
+      }
       </div>
     </div>
   );
