@@ -3,7 +3,7 @@ import {BsFacebook} from 'react-icons/bs'
 import {FcGoogle} from 'react-icons/fc'
 import AuthProvider, { AuthContext } from '../../ContextProvider/AuthProvider';
 import auth from '../../firebase/firebase.config';
-import { Navigate, useLocation, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 
 
 const Login = () => {
@@ -35,16 +35,18 @@ const {signedIn,handleFbLogin,handleGoogleLogin}= useContext(AuthContext)
         handleFbLogin()
         .then(res=>{
             console.log(res);
+            navigate(location?.state?location.state: '/' )
         })
+        
     }
 
    
 
     return (
-<div className="hero min-h-screen bg-gray-300">
+<div className="hero min-h-screen">
   <div className="hero-content flex-col lg:flex-col">
 
-    <div className="card flex-shrink-0 w-[580px] max-w-sm shadow-2xl bg-base-100">
+    <div className="card flex-shrink-0  w-[100%] shadow-2xl bg-base-100">
     <div className="text-center ">
       <h1 className="text-2xl pt-8 font-bold">Login to account</h1>
     
@@ -71,11 +73,12 @@ const {signedIn,handleFbLogin,handleGoogleLogin}= useContext(AuthContext)
             Or Login with
             <span className='flex gap-4 mt-3'> 
 
-               <span onClick={()=>handleFb().then(res=> navigate(location?.state?location.state: '/' ))} className='  btn '>  <BsFacebook className='text-2xl text-blue-700'></BsFacebook>Facebook</span>
+               <span onClick={()=>handleFb()} className='  btn '>  <BsFacebook className='text-2xl text-blue-700'></BsFacebook>Facebook</span>
                <span onClick={()=>handleGoogleLogin().then(res=> navigate(location?.state?location.state: '/' ))} className=' btn '>   <FcGoogle className='text-2xl'></FcGoogle>  Google
 </span>
 
             </span>
+            <Link className='text-blue-700' to={'/register'}> Register Now</Link>
         </div>
       </form>
     </div>

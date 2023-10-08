@@ -79,7 +79,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <img className="w-28 h-42" src={logo} alt="" />
+        <img className=" w-10 h-10 lg:w-36 lg:h-36" src={logo} alt="" />
       </div>
       <div className="navbar-center hidden  lg:flex">
         <ul className="menu  menu-horizontal px-1">{links}</ul>
@@ -89,10 +89,10 @@ const Navbar = () => {
         user ? <>
            <span className="pr-3   font-semibold"> {displayName} </span>
            <button  onClick={()=>handleSignOut()} className="btn-md btn mr-4">Logout</button>
-           <img className="w-16 h-16 rounded-full" src={photoURL} alt="" /> 
+           <img className=" w-8 h-8 lg:w-16 lg:h-16 rounded-full" src={photoURL} alt="" /> 
 
         
-        </>:   <img className="w-12 h-12" src={userPhoto} alt="" />
+        </>:   <img className=" w-8 h-8 lg:w-12 lg:h-12 rounded-full" src={userPhoto} alt="" />
       }
       </div>
     </div>
