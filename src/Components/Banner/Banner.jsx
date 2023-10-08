@@ -15,7 +15,7 @@ const Banner = () => {
 
 
 
-<Swiper className='h-[75vh]'
+<Swiper className='lg:h-[80vh]'
 
 modules={[Navigation, Pagination, Scrollbar, A11y]}
 spaceBetween={50}
@@ -28,16 +28,16 @@ onSlideChange={() => {}}
 >
 <SwiperSlide> 
 
-   <div className='relative'>
-   <img className='w-full ' src={banner} alt="" /> 
-       <div className='absolute top-64 pl-40 space-y-3'>
-       <h2 className='text-3xl font-semibold'> Keep Your Mind In Best Condition </h2>
-       <p  className='text-lg '>Experience the powerful of healing Yoga . <br /> Balance Your Body And Mind</p>
+   <div className=''>
+   <img className='w-full relative ' src={banner} alt="" /> 
+       <div className='absolute top-14 left-4   w-2/3 md:w-full lg:top-64 lg:pl-40 lg:space-y-3'>
+       <h2 className='lg:text-3xl font-semibold'> Keep Your Mind In Best Condition </h2>
+       <p  className=' lg:text-lg '>Experience the powerful of healing Yoga . <br /> Balance Your Body And Mind</p>
        </div>
    </div>
    
    </SwiperSlide>
-<SwiperSlide>  <img className='w-full' src={banner2} alt="" /></SwiperSlide>
+<SwiperSlide>  <img className='w-full  object-cover' src={banner2} alt="" /></SwiperSlide>
 <SwiperSlide> <img className='w-full' src={banner3} alt="" /> </SwiperSlide>
 <SwiperSlide> <img className='w-full' src={banner} alt="" /></SwiperSlide>
 ...
