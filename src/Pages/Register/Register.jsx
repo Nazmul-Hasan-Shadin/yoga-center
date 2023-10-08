@@ -2,9 +2,8 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../ContextProvider/AuthProvider";
 
 import toast, { Toaster } from 'react-hot-toast';
-import { updateProfile } from "firebase/auth";
-import auth from "../../firebase/firebase.config";
-import { useNavigate } from "react-router-dom";
+
+import { Link, useNavigate } from "react-router-dom";
 
 
 const Register = () => {
@@ -34,14 +33,18 @@ const Register = () => {
   createUser(email,password)
   .then(result=>{
     console.log(result);
-    navigate(location?.state? location.state: '/')
+    toast.success('Successfully Register ');
+    // navigate(location?.state? location.state: '/');
+
     // update photoUrl
     handleUpdateProfile(name,profile)
     .then(res=>{
       console.log(res,'succesfull');
+    
     })
     .catch(err=>{
       console.log(err.message);
+      
     })
   })
   .catch(err=>{
@@ -98,6 +101,7 @@ const Register = () => {
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Register</button>
               </div>
+              <p className="mt-2">Already have account ? <Link className="text-blue-600" to={'/login'}>Login</Link> </p>
             </form>
             {
               error ? <p  className="text-red-600 pb-3"> {error} </p>: ''

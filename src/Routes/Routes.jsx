@@ -10,6 +10,7 @@ import ServiceDetails from '../Pages/ServiceDetails/ServiceDetails';
 import Login from '../Pages/Login/Login';
 import Register from '../Pages/Register/Register';
 import PrivateRoute from '../PrivateRoutes/PrivateRoute';
+import Blogs from '../Pages/Blogs/Blogs';
 
 const router= createBrowserRouter([{
     path: '/',
@@ -32,6 +33,11 @@ const router= createBrowserRouter([{
         {
             path: '/register',
             element:  <Register></Register>
+        },
+        {
+            path:'/blog',
+            element:  <PrivateRoute><Blogs></Blogs></PrivateRoute>,
+            loader:()=> fetch('/blogs.json')
         }
     ]
 

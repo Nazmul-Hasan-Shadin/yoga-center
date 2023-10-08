@@ -4,6 +4,7 @@ import {FcGoogle} from 'react-icons/fc'
 import AuthProvider, { AuthContext } from '../../ContextProvider/AuthProvider';
 import auth from '../../firebase/firebase.config';
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
+import toast, { Toaster } from 'react-hot-toast';
 
 
 const Login = () => {
@@ -20,10 +21,14 @@ const {signedIn,handleFbLogin,handleGoogleLogin}= useContext(AuthContext)
         signedIn(email,password)
         .then(res=>{
             console.log(res);
+
             navigate(location?.state? location.state: '/')
+            toast.success('Successfully Logged In')
+            alert('hf')
         })
         .catch(err=>{
             console.log(err.message);
+            toast.error(err.message)
         })
 
 
@@ -35,7 +40,9 @@ const {signedIn,handleFbLogin,handleGoogleLogin}= useContext(AuthContext)
         handleFbLogin()
         .then(res=>{
             console.log(res);
+        
             navigate(location?.state?location.state: '/' )
+            toast.success('Successfully Logged In')
         })
         
     }
@@ -83,6 +90,7 @@ const {signedIn,handleFbLogin,handleGoogleLogin}= useContext(AuthContext)
       </form>
     </div>
   </div>
+  <Toaster></Toaster>
 </div>
     );
 };
