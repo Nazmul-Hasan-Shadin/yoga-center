@@ -5,12 +5,12 @@ const ServicePriceing = () => {
   return (
 <>
 
-<h2 className="text-center font-medium text-3xl my-5">Service Price</h2>
+<h2 className="text-center font-medium text-3xl my-5">Service Price  & Other</h2>
 
 <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-4">
       <div data-aos="zoom-in" className="col-span-2 bg-[#faf6f2] space-y-6 p-10 ">
         <p>OUR YOGA STUDIO</p>
-        <h2 className="text-2xl">Services & Pricing</h2>
+        <h2 className="text-xl font-medium lg:text-2xl ">Services & Pricing </h2>
         <p>Standard Pricing Plan $350 </p>
         <p>Professional Pricing Plan $120Per week</p>
         <p>Private Pricing Plan $250Per week</p>
