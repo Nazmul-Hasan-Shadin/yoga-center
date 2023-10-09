@@ -11,10 +11,13 @@ import Login from '../Pages/Login/Login';
 import Register from '../Pages/Register/Register';
 import PrivateRoute from '../PrivateRoutes/PrivateRoute';
 import Blogs from '../Pages/Blogs/Blogs';
+import About from '../Pages/About/About';
+import Error from '../Components/Error/Error';
 
 const router= createBrowserRouter([{
     path: '/',
     element: <Root></Root>,
+    errorElement: <Error></Error>  ,   
     children: [
         {
             path: '/',
@@ -38,6 +41,10 @@ const router= createBrowserRouter([{
             path:'/blog',
             element:  <PrivateRoute><Blogs></Blogs></PrivateRoute>,
             loader:()=> fetch('/blogs.json')
+        },
+        {
+            path: '/about',
+            element: <PrivateRoute><About></About></PrivateRoute>
         }
     ]
 

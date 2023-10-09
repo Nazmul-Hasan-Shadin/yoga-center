@@ -3,11 +3,15 @@ import banner2 from "../../assets/banner2.jpg";
 import banner3 from "../../assets/banner3.jpg";
 const ServicePriceing = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-4">
+<>
+
+<h2 className="text-center font-medium text-3xl my-5">Service Price</h2>
+
+<div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-4">
       <div data-aos="zoom-in" className="col-span-2 bg-[#faf6f2] space-y-6 p-10 ">
         <p>OUR YOGA STUDIO</p>
         <h2 className="text-2xl">Services & Pricing</h2>
-        <p>Standard Pricing Plan $35Per week</p>
+        <p>Standard Pricing Plan $350 </p>
         <p>Professional Pricing Plan $120Per week</p>
         <p>Private Pricing Plan $250Per week</p>
 
@@ -38,11 +42,10 @@ const ServicePriceing = () => {
           </figure>
 
           <div className="card-body text-white">
-            <h2 className="card-title">Yoga Professional COurses</h2>
+            <h2 className="card-title">Yoga Event Hub</h2>
             <p className="text-justify text-sm">
               {" "}
-              Enhance your yoga journey with our comprehensive Yoga Professional
-              Courses. Whether you aspire to become a certified yoga instructor.
+              Discover a world of yoga events and workshops that will enrich your practice. Explore a variety of yoga gatherings, workshops, and retreats to deepen your connection with mind, body, and spirit. Join our community and find the perfect event to enhance your yoga journey
             </p>
           </div>
         </div>
@@ -82,6 +85,9 @@ const ServicePriceing = () => {
         </div>
       </div>
     </div>
+
+
+</>
   );
 };
 
