@@ -50,15 +50,16 @@ const {signedIn,handleFbLogin,handleGoogleLogin}= useContext(AuthContext)
    
 
     return (
-<div className="hero min-h-screen">
-  <div className="hero-content flex-col lg:flex-col">
 
-    <div className="card flex-shrink-0  w-[100%] shadow-2xl bg-base-100">
+  <div className="hero container  min-h-screen">
+  <div className="hero-content p-0 flex-col lg:flex-col">
+
+    <div className="card  w-[310px] md:w-full  shadow-2xl">
     <div className="text-center ">
       <h1 className="text-2xl pt-8 font-bold">Login to account</h1>
     
     </div>
-      <form onSubmit={handleLogin} className="card-body">
+      <form onSubmit={handleLogin}  className="card-body">
         <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>
@@ -76,22 +77,24 @@ const {signedIn,handleFbLogin,handleGoogleLogin}= useContext(AuthContext)
           <button className="btn text-white bg-[#57d38c]">Login</button> 
           <span className='pt-4'>Forget Password?</span>
         </div>
-        <div className=''>
+        <div className=' '>
             Or Login with
-            <span className='flex gap-4 mt-3'> 
+            <p className='flex gap-2 mt-3'> 
 
-               <span onClick={()=>handleFb()} className='  btn '>  <BsFacebook className='text-2xl text-blue-700'></BsFacebook>Facebook</span>
-               <span onClick={()=>handleGoogleLogin().then(res=> navigate(location?.state?location.state: '/' ))} className=' btn '>   <FcGoogle className='text-2xl'></FcGoogle>  Google
+               <span onClick={()=>handleFb()} className='  btn  '>  <BsFacebook className='lg:text-2xl text-blue-700'></BsFacebook>Facebook</span>
+               <span onClick={()=>handleGoogleLogin().then(res=> navigate(location?.state?location.state: '/' ))} className=' btn '>   <FcGoogle className='lg:text-2xl'></FcGoogle>  Google
 </span>
 
-            </span>
+            </p>
             <Link className='text-blue-700' to={'/register'}> Register Now</Link>
         </div>
       </form>
     </div>
   </div>
   <Toaster></Toaster>
-</div>
+</div> 
+
+
     );
 };
 
