@@ -1,7 +1,7 @@
-# React + Vite
+# Yoga-Center
 
  The website Name Is Yoga-Center
- Live Link: https://yoga-center-cb96f.web.app/
+   Live Link: https://yoga-center-cb96f.web.app/
 
  * The feature Of this Website
       * Its created by React Library .No reload issue single page application .
