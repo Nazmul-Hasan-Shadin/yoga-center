@@ -29,13 +29,14 @@ onSlideChange={() => {}}
 <SwiperSlide> 
 
    <div className=''>
-   <img className='w-full relative ' src={banner} alt="" /> 
-       <div  data-aos="fade-left"
+    <div className='bg-black  absolute lg:h-[80vh] lg:opacity-40 w-[100%]'></div>
+   <img className='w-full relative  mix-blend-overlay  ' src={banner} alt="" /> 
+       <div  data-aos="fade-left "
      data-aos-anchor="#example-anchor"
      data-aos-offset="500"
      data-aos-duration="1000" className='absolute top-14 left-4   w-2/3 md:w-full lg:top-64 lg:pl-40 lg:space-y-3'>
-       <h2 className='lg:text-3xl font-semibold'> Keep Your Mind In Best Condition </h2>
-       <p  className=' lg:text-lg '>Experience the powerful of healing Yoga . <br /> Balance Your Body And Mind</p>
+       <h2 className='lg:text-3xl lg:text-white font-semibold'> Keep Your Mind In Best Condition </h2>
+       <p  className=' lg:text-white lg:text-lg '>Experience the powerful of healing Yoga . <br /> Balance Your Body And Mind</p>
        </div>
    </div>
    
