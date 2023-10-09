@@ -25,7 +25,7 @@ const {signedIn,handleFbLogin,handleGoogleLogin}= useContext(AuthContext)
 
             navigate(location?.state? location.state: '/')
             toast.success('Successfully Logged In')
-            alert('hf')
+          
         })
         .catch(err=>{
             console.log(err.message);
