@@ -68,7 +68,7 @@ const Navbar = () => {
   );
   return (
     <div className="navbar bg-base-100 justify-between md:justify-">
-      <div className="navbar-start w-[32%] z-20">
+      <div className="navbar-start w-[28%] z-20">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
@@ -93,7 +93,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <img className=" w-10 h-10 lg:w-36 lg:h-36" src={logo} alt="" />
+        <img className={` w-10 h-10  ${user &&'hidden ' } md:block md:w-24 md:h-24  lg:w-36 lg:h-24`} src={logo} alt="" />
       </div>
       <div className="navbar-center hidden  lg:flex">
         <ul className="menu  menu-horizontal px-1">{links}</ul>
