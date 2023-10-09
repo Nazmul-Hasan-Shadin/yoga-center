@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const Error = () => {
   return (
     <>
-      <section className="relative z-10 bg-primary py-[120px]">
+      <section className="relative w-full z-10 bg-primary py-[120px] ">
         <div className="container">
-          <div className="flex -mx-4">
-            <div className="w-full px-4">
+          <div className="flex lg:-mx-4">
+            <div className=" w-full  px-4">
               <div className="mx-auto max-w-[400px] text-center">
                 <h2 className="mb-2 text-[50px] font-bold leading-none text-white sm:text-[80px] md:text-[100px]">
                   404

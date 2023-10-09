@@ -31,28 +31,37 @@ const Navbar = () => {
   Blogs
 </NavLink>
       </li>
-      <li>
-      <NavLink
-  to="/login"
-  className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "active" : ""
-  }
+
+   {
+    !user &&       <li>
+   <NavLink
+to="/login"
+className={({ isActive, isPending }) =>
+ isPending ? "pending" : isActive ? "active" : ""
+}
 >
-  Login
+Login
 </NavLink>
 
-      </li>
-      <li>
-      <NavLink
-  to="/register"
-  className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "active" : ""
-  }
+   </li>
+
+   }
+
+   {
+    !user && <li>
+    <NavLink
+to="/register"
+className={({ isActive, isPending }) =>
+  isPending ? "pending" : isActive ? "active" : ""
+}
 >
-  Register
+Register
 </NavLink>
 
-      </li>
+    </li>
+   }
+
+
       <li>
       <NavLink
   to="/about"
