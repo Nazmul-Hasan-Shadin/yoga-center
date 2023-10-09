@@ -16,11 +16,11 @@ const ServiceDetail = ({serviceDetail}) => {
              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-20 max-w-7xl mx-auto my-16 p-5 '>
 
                 {/* left side details */}
-             <div className='space-y-5'>
+             <div className='space-y-5 p-4'>
               <div>
                 <img src={image} alt="" />
               </div>
-             <h1 className='text-2xl'>{name}</h1>
+             <h1 className='text-xl font-medium lg:text-2xl'>{name}</h1>
 
              <p className='text-sm leading-loose'>
                 {description}
