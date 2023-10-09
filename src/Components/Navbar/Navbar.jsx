@@ -106,7 +106,7 @@ const Navbar = () => {
            <img className=" w-8 h-8 lg:w-16 lg:h-16 rounded-full" src={photoURL} alt="" /> 
 
         
-        </>:   <img className=" w-8 h-8 lg:w-12 lg:h-12 rounded-full" src={userPhoto} alt="" />
+        </> :   <img className=" w-8 h-8 lg:w-12 lg:h-12 rounded-full" src={userPhoto} alt="" />
       }
       </div>
     </div>

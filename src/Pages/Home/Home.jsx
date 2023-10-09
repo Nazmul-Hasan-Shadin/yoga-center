@@ -6,6 +6,7 @@ import Services from '../../Components/Services/Services';
 import ServicePriceing from '../../Components/ServicePricing/ServicePriceing';
 import Trainers from '../../Components/Trainers/Trainers';
 import Footer from '../../Components/Footer/Footer';
+import MiddleHero from '../../Components/MiddleHero/MiddleHero';
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
          <Services></Services>
           <div className='lg:my-8'>
           <ServicePriceing></ServicePriceing>
+          <MiddleHero></MiddleHero>
          <Trainers></Trainers>
          
          <Footer></Footer>
