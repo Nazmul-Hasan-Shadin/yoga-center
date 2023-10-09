@@ -34,7 +34,7 @@ const Register = () => {
   .then(result=>{
     console.log(result);
     toast.success('Successfully Register ');
-    // navigate(location?.state? location.state: '/');
+    navigate(location?.state? location.state: '/');
 
     // update photoUrl
     handleUpdateProfile(name,profile)
