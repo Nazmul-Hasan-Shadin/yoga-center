@@ -1,8 +1,11 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ The website Name Is Yoga-Center
+ Live Link: https://yoga-center-cb96f.web.app/
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ * The feature Of this Website
+      * Its created by React Library .No reload issue single page application .
+      * Easy User Experience with animation thats look awesome
+      * Authentication system has implement .
+      * Google ,Facebook SignIn feature available thats make  login more easily .
+      * Easy Layout system .User can see BLog about yoga without any harassment 
