@@ -5,7 +5,7 @@ const Trainer = ({trainer}) => {
     return (
         <div >
             
-<div className="  h-[380px] max-w-sm mb-6 bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<div data-aos="fade-up"  data-aos-duration="800"  className="  h-[380px] max-w-sm mb-6 bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <div className="flex justify-end px-4 pt-12">
 
     

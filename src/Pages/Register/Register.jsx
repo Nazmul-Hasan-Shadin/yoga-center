@@ -108,7 +108,7 @@ const Register = () => {
             }
           </div>
         </div>
-        <Toaster />
+     
       </div>
          
     );

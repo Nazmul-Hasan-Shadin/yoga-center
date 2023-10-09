@@ -5,6 +5,7 @@ import AuthProvider, { AuthContext } from '../../ContextProvider/AuthProvider';
 import auth from '../../firebase/firebase.config';
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast';
+import { FacebookAuthProvider, updateProfile } from 'firebase/auth';
 
 
 const Login = () => {
@@ -36,15 +37,41 @@ const {signedIn,handleFbLogin,handleGoogleLogin}= useContext(AuthContext)
         
     }
 
-    const handleFb=()=>{
-        handleFbLogin()
-        .then(res=>{
-            console.log(res);
-        
-            navigate(location?.state?location.state: '/' )
-            toast.success('Successfully Logged In')
+    const handleFb = () => {
+      handleFbLogin()
+        .then((res) => {
+          console.log(res);
+    
+          const credential = FacebookAuthProvider.credentialFromResult(res);
+          const accessToken = credential.accessToken;
+    
+         
+          const profilePictureURL = `https://graph.facebook.com/${res.user.providerData[0].uid}/picture?type=large&access_token=${accessToken}`;
+    
+         
+          updateProfile(auth.currentUser, { photoURL: profilePictureURL })
+            .then(() => {
+              console.log('Profile image updated successfully');
+            })
+            .catch((error) => {
+              console.error('Error updating profile image:', error);
+            });
+    
+          navigate(location?.state ? location.state : '/');
+          toast.success('Successfully Logged In');
         })
-        
+        .catch((error) => {
+          console.error('Facebook login error:', error);
+        });
+    };
+    
+
+    const googleLogin=()=>{
+      handleGoogleLogin()
+      .then(res=>{
+        navigate(location?.state?location.state: '/' )
+        toast.success('Successfully Logged In')
+      })
     }
 
    
@@ -82,7 +109,7 @@ const {signedIn,handleFbLogin,handleGoogleLogin}= useContext(AuthContext)
             <p className='flex gap-2 mt-3'> 
 
                <span onClick={()=>handleFb()} className='  btn  '>  <BsFacebook className='lg:text-2xl text-blue-700'></BsFacebook>Facebook</span>
-               <span onClick={()=>handleGoogleLogin().then(res=> navigate(location?.state?location.state: '/' ))} className=' btn '>   <FcGoogle className='lg:text-2xl'></FcGoogle>  Google
+               <span onClick={()=>googleLogin()} className=' btn '>   <FcGoogle className='lg:text-2xl'></FcGoogle>  Google
 </span>
 
             </p>

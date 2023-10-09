@@ -30,7 +30,10 @@ onSlideChange={() => {}}
 
    <div className=''>
    <img className='w-full relative ' src={banner} alt="" /> 
-       <div className='absolute top-14 left-4   w-2/3 md:w-full lg:top-64 lg:pl-40 lg:space-y-3'>
+       <div  data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="1000" className='absolute top-14 left-4   w-2/3 md:w-full lg:top-64 lg:pl-40 lg:space-y-3'>
        <h2 className='lg:text-3xl font-semibold'> Keep Your Mind In Best Condition </h2>
        <p  className=' lg:text-lg '>Experience the powerful of healing Yoga . <br /> Balance Your Body And Mind</p>
        </div>

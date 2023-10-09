@@ -49,12 +49,24 @@ const Navbar = () => {
 >
   Login
 </NavLink>
+
+      </li>
+      <li>
+      <NavLink
+  to="/register"
+  className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "active" : ""
+  }
+>
+  Register
+</NavLink>
+
       </li>
     </>
   );
   return (
     <div className="navbar bg-base-100 justify-between md:justify-">
-      <div className="navbar-start z-20">
+      <div className="navbar-start w-[32%] z-20">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg

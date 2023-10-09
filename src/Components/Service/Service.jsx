@@ -1,23 +1,27 @@
 import { Link } from "react-router-dom";
 
+import {BsCurrencyDollar} from 'react-icons/bs'
 
 
 
 const Service = ({service}) => {
    const {name,description,price,id,image}= service;
+   const animation= ['fade-right','fade-down','fade-up-right','fade-up-left','zoom-in','zoom-up']
+   
+
   return (
     <div>
  
   
   <Link to={`/serviceDetails/${id}`}>
-  <div  className="max-w-sm h-[600px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+  <div data-aos="zoom-in"  data-aos-duration="1000"  className="max-w-sm h-[600px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
      <img src={image} alt="" />
     <div className="p-6">
     <a href="#">
         <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"> {name}</h5>
     </a>
-    <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">{description}</p>
-    <h2>price : {price}</h2>
+    <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">{description.substring(0,150)}</p>
+    <h2 className=""> <span className="font-medium">price</span> : {price}</h2>
     <a  className="inline-flex items-center text-blue-600 hover:underline">
       See Details
         <svg className="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">

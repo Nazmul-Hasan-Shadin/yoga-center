@@ -4,7 +4,7 @@ import banner3 from "../../assets/banner3.jpg";
 const ServicePriceing = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-4">
-      <div className="col-span-2 bg-[#faf6f2] space-y-6 p-10 ">
+      <div data-aos="zoom-in" className="col-span-2 bg-[#faf6f2] space-y-6 p-10 ">
         <p>OUR YOGA STUDIO</p>
         <h2 className="text-2xl">Services & Pricing</h2>
         <p>Standard Pricing Plan $35Per week</p>
@@ -15,7 +15,7 @@ const ServicePriceing = () => {
       </div>
 
       {/* video card */}
-      <div className="col-span-2">
+      <div data-aos="zoom-in"  data-aos-duration="1000" className="col-span-2">
         <iframe 
         className= " w-full lg:w-[560px]"
          
@@ -29,7 +29,7 @@ const ServicePriceing = () => {
       </div>
       {/* profesionla course card */}
 
-   <div className=" col-span-2 lg:col-span-1 p-2">
+   <div  data-aos="zoom-in"  data-aos-duration="1000" className=" col-span-2 lg:col-span-1 p-2">
        
    <div className="card h-80  bg-[#F56C6D] shadow-xl ">
           <figure>
@@ -50,12 +50,12 @@ const ServicePriceing = () => {
      
 
           {/* card 3 */}
-      <div className="">
+      <div  data-aos="zoom-in"  data-aos-duration="1000"  className="">
         <img className="w-[100%] h-[100%] " src={banner2} alt="" />
       </div>
 
       {/* card 3 */}
-      <div className="">
+      <div  data-aos="zoom-in"  data-aos-duration="1000" className="">
         <div className="card h-80 bg-[#815C9E] shadow-xl  ">
           <figure>
             {" "}
@@ -77,7 +77,7 @@ const ServicePriceing = () => {
       </div>
       <div>
         {/* card 4 */}
-        <div className="">
+        <div  data-aos="zoom-in"  data-aos-duration="1000" className="">
           <img className=" h-80 " src={banner3} alt="" />
         </div>
       </div>
